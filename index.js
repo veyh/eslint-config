@@ -7,13 +7,18 @@ module.exports = {
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
   parserOptions: {
+    ecmaVersion: 2018,
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: true
     },
     sourceType: "module"
   },
   plugins: ["react"],
+  settings: {
+    react: {
+      version: "15.0"
+    },
+  },
   rules: {
     "indent": [2, 2, {
       "SwitchCase": 1,
@@ -25,7 +30,11 @@ module.exports = {
     "quotes": [2, "double"],
     "semi": [2, "always"],
     "no-console": [1],
-    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "no-unused-vars": ["warn", {
+      args: "all",
+      argsIgnorePattern: "^_",
+      varsIgnorePattern: "^_",
+    }],
     "no-constant-condition": [0],
     "no-restricted-globals": [2, "Promise"],
     // "one-var": [2, "always"],
