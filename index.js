@@ -7,8 +7,8 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "plugin:flowtype/recommended",
     "plugin:react/recommended",
+    "plugin:flowtype/recommended",
   ],
   parser: "babel-eslint",
   plugins: ["flowtype", "react"],
@@ -18,6 +18,8 @@ module.exports = {
     },
   },
   rules: {
+    "flowtype/semi": [2, "always"],
+
     "indent": [2, 2, {
       "SwitchCase": 1,
       "MemberExpression": "off",
