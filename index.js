@@ -5,18 +5,16 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
-  parserOptions: {
-    ecmaVersion: 2018,
-    ecmaFeatures: {
-      jsx: true
-    },
-    sourceType: "module"
-  },
-  plugins: ["react"],
+  extends: [
+    "eslint:recommended",
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+  ],
+  parser: "babel-eslint",
+  plugins: ["flowtype", "react"],
   settings: {
     react: {
-      version: "15.0"
+      version: "16.0"
     },
   },
   rules: {
