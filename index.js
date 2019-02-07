@@ -11,7 +11,7 @@ module.exports = {
     "plugin:flowtype/recommended",
   ],
   parser: "babel-eslint",
-  plugins: ["flowtype", "react"],
+  plugins: ["flowtype", "react", "react-hooks"],
   settings: {
     react: {
       version: "16.0"
@@ -19,6 +19,7 @@ module.exports = {
   },
   rules: {
     "flowtype/semi": [2, "always"],
+    "react-hooks/rules-of-hooks": "error",
 
     "indent": [2, 2, {
       "SwitchCase": 1,
