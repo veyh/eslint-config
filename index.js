@@ -52,7 +52,11 @@ module.exports = {
     "space-in-parens": [2, "never"],
     "array-bracket-spacing": [2, "never"],
     "object-curly-spacing": [2, "always"],
-    "max-len": [2, { "code": 80, "ignoreStrings": true }],
+    "max-len": [2, {
+      "code": 80,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+    }],
     "comma-style": [2, "last"],
     "comma-dangle": [2, {
       "arrays": "only-multiline",
