@@ -1,6 +1,5 @@
 {
   "name": "@veyh/eslint-config",
-  "private": true,
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
