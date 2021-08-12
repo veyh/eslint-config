@@ -6,7 +6,6 @@
   "author": "veyh",
   "license": "MIT",
   "peerDependencies": {
-    "@babel/eslint-parser": "^7.12.13",
     "eslint": "^7.19.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-react": "^7.22.0",

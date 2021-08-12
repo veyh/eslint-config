@@ -10,7 +10,6 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:flowtype/recommended",
   ],
-  parser: "babel-eslint",
   plugins: ["flowtype", "react", "react-hooks"],
   settings: {
     react: {
